@@ -1,15 +1,24 @@
-import React from 'react';
-import { SafeAreaView, ScrollView, View, Text, StatusBar } from 'react-native';
+import React, { useEffect } from 'react';
+import { ScrollView, View, Text, StatusBar } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 
-const App: React.FC = () => (
-  <>
-    <StatusBar barStyle="light-content" />
-    <SafeAreaView>
+import { AppContainer, Logo } from './styles/app';
+
+const App: React.FC = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  });
+
+  return (
+    <AppContainer>
+      <StatusBar barStyle="light-content" backgroundColor="#1B1B1F" />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <Text>rentx</Text>
+        <Logo>
+          <Text>rentx</Text>
+        </Logo>
       </ScrollView>
-    </SafeAreaView>
-  </>
-);
+    </AppContainer>
+  );
+};
 
 export default App;
