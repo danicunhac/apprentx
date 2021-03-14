@@ -1,12 +1,23 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, Image, View } from 'react-native';
 
-import { Container } from './styles';
+import calendar from '../../assets/calendar.png';
+
+import { Container, Number } from './styles';
 
 const OnboardDate: React.FC = () => {
   return (
     <Container>
-      <Text>OnboardDate</Text>
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}
+      >
+        <Image source={calendar} />
+        <Number>01</Number>
+      </View>
     </Container>
   );
 };
