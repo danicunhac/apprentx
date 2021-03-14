@@ -1,11 +1,9 @@
-import { SafeAreaView, View } from 'react-native';
+import { View } from 'react-native';
 import styled from 'styled-components';
 
-export const AppContainer = styled(SafeAreaView)`
-  background-color: #1b1b1f;
+export const AppContainer = styled(View)`
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  color: #7a7a80;
 `;
 
 export const Logo = styled(View)``;
