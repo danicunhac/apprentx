@@ -32,6 +32,10 @@ $ yarn android
 
 _Note: you must have Android Studio in order to use this app_
 
+## 👀 Layout
+
+Click [here](https://www.figma.com/file/7Ro0D8mdcX36qWnSBhWaXF/RentX?node-id=0%3A1) to access the layout in Figma
+
 ## 📰 MIT License
 
 [Copyright](https://github.com/danicunhac/apprentx/blob/main/LICENSE) (c) 2021 [Daniel Cunha](https://www.linkedin.com/in/danielcunhac/)
