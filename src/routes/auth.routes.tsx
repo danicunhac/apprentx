@@ -17,9 +17,9 @@ const AuthRoutes: React.FC = () => (
       cardStyle: { backgroundColor: '#fff' },
     }}
   >
-    <Auth.Screen name="Date" component={OnboardDate} />
-    <Auth.Screen name="Car" component={OnboardCar} />
-    <Auth.Screen name="Welcome" component={OnboardWelcome} />
+    <Auth.Screen name="OnboardDate" component={OnboardDate} />
+    <Auth.Screen name="OnboardCar" component={OnboardCar} />
+    <Auth.Screen name="OnboardWelcome" component={OnboardWelcome} />
     {/* Authorization Routes */}
     <Auth.Screen name="SignIn" component={SignIn} />
     <Auth.Screen name="SignUp" component={SignUp} />
