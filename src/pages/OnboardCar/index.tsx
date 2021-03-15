@@ -28,7 +28,7 @@ const OnboardCar: React.FC = () => {
       <View style={{ marginTop: 96 }}>
         <Title>Depois, escolha o carro</Title>
         <Description>
-          Você é quem define um período, e nós mostraremos os carros disponíveis
+          Vários modelos para você dirigir seguro, com conforto e segurança
         </Description>
       </View>
       <Footer>
