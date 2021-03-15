@@ -38,7 +38,7 @@ Click [here](https://www.figma.com/file/7Ro0D8mdcX36qWnSBhWaXF/RentX?node-id=0%3
 
 ## 📱 Preview
 
-<img src="https://i.imgur.com/YlIqksh.png" /> <img src="https://i.imgur.com/lphuAoI.png" /> <img src="https://i.imgur.com/S3SMxYR.png" />
+<img src="https://i.imgur.com/YlIqksh.png" width="178" height="342" /> <img src="https://i.imgur.com/lphuAoI.png" width="178" height="342" /> <img src="https://i.imgur.com/S3SMxYR.png" width="178" height="342" />
 
 ## 📰 MIT License
 
