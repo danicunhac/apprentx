@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import styled from 'styled-components';
 
 export const AppContainer = styled(View)`
@@ -6,4 +6,10 @@ export const AppContainer = styled(View)`
   color: #7a7a80;
 `;
 
-export const Logo = styled(View)``;
+export const Title = styled(Text)`
+  font-size: 40px;
+  line-height: 42px;
+  width: 196px;
+  color: #47474d;
+  font-family: 'Archivo-Bold';
+`;

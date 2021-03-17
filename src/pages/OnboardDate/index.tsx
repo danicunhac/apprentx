@@ -7,7 +7,8 @@ import OnboardingDot from '../../components/OnboardingDot';
 import calendar from '../../assets/calendar.png';
 import chevronRight from '../../assets/chevron-right.png';
 
-import { Container, Number, Title, Description, Footer, Dots } from './styles';
+import { Container, Number, Description, Footer, Dots } from './styles';
+import { Title } from '../../styles/app';
 
 const OnboardDate: React.FC = () => {
   const navigation = useNavigation();

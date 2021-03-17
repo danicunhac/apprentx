@@ -7,7 +7,8 @@ import OnboardingDot from '../../components/OnboardingDot';
 import car from '../../assets/car.png';
 import chevronRight from '../../assets/chevron-right.png';
 
-import { Container, Number, Title, Description, Footer, Dots } from './styles';
+import { Container, Number, Description, Footer, Dots } from './styles';
+import { Title } from '../../styles/app';
 
 const OnboardCar: React.FC = () => {
   const navigation = useNavigation();

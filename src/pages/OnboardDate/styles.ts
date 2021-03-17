@@ -13,14 +13,6 @@ export const Number = styled(Text)`
   font-family: 'Archivo-Bold';
 `;
 
-export const Title = styled(Text)`
-  font-size: 40px;
-  line-height: 42px;
-  width: 196px;
-  color: #47474d;
-  font-family: 'Archivo-Bold';
-`;
-
 export const Description = styled(Text)`
   font-size: 15px;
   line-height: 25px;
