@@ -1,27 +1,31 @@
+import CheckBox from '@react-native-community/checkbox';
 import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
-
 import { Image, StatusBar, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import CheckBox from '@react-native-community/checkbox';
-import { Input } from '../../components/Input';
 
 import chevronLeft from '../../assets/chevron-left.png';
 import emailIcon from '../../assets/email.png';
 import passwordIcon from '../../assets/password.png';
 
+import { Button } from '../../components/Button';
+import { Input } from '../../components/Input';
 import { Title } from '../../styles/app';
+
 import { Container, Description, HelperText } from './styles';
-import Button from '../../components/Button';
 
 const SignIn: React.FC = () => {
   const navigation = useNavigation();
-  const [rememberMe] = useState(false);
+  const [rememberMe, setRememberMe] = useState(false);
+
+  const handleSubmitForm = () => {
+    return true;
+  };
 
   return (
     <Container>
       <StatusBar barStyle="dark-content" backgroundColor="#fff" />
-      <TouchableOpacity onPress={() => navigation.navigate('OnboardDate')}>
+      <TouchableOpacity onPress={() => navigation.navigate('OnboardWelcome')}>
         <Image source={chevronLeft} />
       </TouchableOpacity>
       <Title style={{ marginTop: 80 }}>Estamos quase lá.</Title>
@@ -51,15 +55,17 @@ const SignIn: React.FC = () => {
             justifyContent: 'space-between',
           }}
         >
-          <CheckBox value={rememberMe} />
+          <CheckBox
+            value={rememberMe}
+            onValueChange={newValue => setRememberMe(newValue)}
+            tintColors={{ true: '#1b1b1f' }}
+          />
           <HelperText style={{ marginLeft: 12 }}>Lembrar-me</HelperText>
         </View>
         <HelperText>Esqueci minha senha</HelperText>
       </View>
       <Button
-        onPress={() => {
-          console.log('Hi');
-        }}
+        onPress={() => handleSubmitForm}
         backgroundColor="#dc1637"
         style={{ width: '100%' }}
       >
