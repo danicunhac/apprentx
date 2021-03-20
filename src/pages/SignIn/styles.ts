@@ -11,5 +11,13 @@ export const Description = styled(Text)`
   line-height: 25px;
   font-family: 'Inter-Regular';
   margin-top: 24px;
+  margin-bottom: 50px;
   width: 224px;
+`;
+
+export const HelperText = styled(Text)`
+  font-family: 'Inter-Regular';
+  font-size: 13px;
+  line-height: 16px;
+  color: #737380;
 `;

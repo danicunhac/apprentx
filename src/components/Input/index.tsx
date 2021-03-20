@@ -1,20 +1,26 @@
-import React from 'react';
-import { Text } from 'react-native';
+import React, { useRef } from 'react';
+import { TextInputProps } from 'react-native';
 
-import { Container } from './styles';
+import { Container, InputField, IconContainer } from './styles';
 
-interface InputProps {
-  placeholder: string;
+interface InputProps extends TextInputProps {
+  name?: string;
 }
 
 export const Input: React.FC<InputProps> = ({
   placeholder = '',
   children = null,
 }) => {
+  const inputElementRef = useRef(null);
+
   return (
     <Container>
-      {children}
-      <Text>{placeholder}</Text>
+      <IconContainer>{children}</IconContainer>
+      <InputField
+        placeholderTextColor="#aeaeb3"
+        ref={inputElementRef}
+        placeholder={placeholder}
+      />
     </Container>
   );
 };
