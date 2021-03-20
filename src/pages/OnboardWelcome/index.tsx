@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Image, StatusBar, View } from 'react-native';
 import icon from '../../assets/icon.png';
-import Button from '../../components/Button';
+import { Button } from '../../components/Button';
 
 import { Container, WelcomeText, HelperText } from './styles';
 

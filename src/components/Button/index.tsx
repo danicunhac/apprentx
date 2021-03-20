@@ -9,7 +9,7 @@ interface ButtonProps extends RectButtonProperties {
   textColor?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   children = null,
   textColor = '#e1e1e6',
   ...rest
@@ -18,4 +18,3 @@ const Button: React.FC<ButtonProps> = ({
     <ButtonText textColor={textColor}>{children}</ButtonText>
   </Container>
 );
-export default Button;
